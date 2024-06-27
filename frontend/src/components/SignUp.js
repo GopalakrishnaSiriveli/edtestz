@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import './Folder.css'
 
 const SignUp = () => {
   const [username, setUsername] = useState('');
@@ -21,10 +22,11 @@ const SignUp = () => {
   };
 
   return (
-    <div>
-      <h2>Sign Up</h2>
+    <div className='signin'>
+      <h1>Sign Up!...</h1>
       <form onSubmit={handleSubmit}>
         <input
+          className='input'
           type="text"
           placeholder="Username"
           value={username}
@@ -32,13 +34,14 @@ const SignUp = () => {
           required
         />
         <input
+          className='input'
           type="password"
           placeholder="Password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           required
         />
-        <button type="submit">Sign Up</button>
+        <button className='button' type="submit">Sign Up</button>
       </form>
       <p>{message}</p>
     </div>

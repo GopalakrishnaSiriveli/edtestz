@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import './Folder.css'
 
 const AppointmentHistory = () => {
   const [appointments, setAppointments] = useState([]);
@@ -22,8 +23,8 @@ const AppointmentHistory = () => {
   }, []);
 
   return (
-    <div>
-      <h2>Appointment History</h2>
+    <div className='signin'> 
+      <h1>Here Is Your Appointment History!...</h1>
       {error ? (
         <p>Error: {error}</p>
       ) : (

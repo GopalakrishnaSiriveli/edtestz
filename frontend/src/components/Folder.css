@@ -1,0 +1,39 @@
+.footer{
+    background-color:black;
+}
+.header{
+    background-color:black;
+}
+.image{
+    height:40px;
+    width:40px;
+    margin-right:150px;
+    margin-bottom:0px;
+}
+.signin{
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    align-items:center;
+    background-color: antiquewhite;
+    padding:20px;
+    height:100vh;
+    margin:0px;
+}
+.input{
+    height:30px;
+    width:150px;
+    border-radius:10px;
+    background-color:whitesmoke;
+    color:black;
+    border-color:black;
+    border-width:1px;
+
+}
+.button{
+    height:30px;
+    width:100px;
+    border-radius:7px;
+    color:white;
+    background-color:black;
+}

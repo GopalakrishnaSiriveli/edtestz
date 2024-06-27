@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import './Folder.css'
 
 const Booking = () => {
   const [date, setDate] = useState('');
@@ -22,22 +23,24 @@ const Booking = () => {
   };
 
   return (
-    <div>
-      <h2>Book Appointment</h2>
+    <div className='signin'>
+      <h1>Book An Appointment</h1>
       <form onSubmit={handleSubmit}>
         <input
+          className='input'
           type="date"
           value={date}
           onChange={(e) => setDate(e.target.value)}
           required
         />
         <input
+          className='input'
           type="time"
           value={time}
           onChange={(e) => setTime(e.target.value)}
           required
         />
-        <button type="submit">Book</button>
+        <button className='button' type="submit">Book Now</button>
       </form>
       <p>{message}</p>
     </div>

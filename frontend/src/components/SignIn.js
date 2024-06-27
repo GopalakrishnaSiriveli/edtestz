@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
+import './Folder.css'
 
 const SignIn = () => {
   const [username, setUsername] = useState('');
@@ -20,10 +21,11 @@ const SignIn = () => {
   };
 
   return (
-    <div>
-      <h2>Sign In</h2>
+    <div className="signin">
+      <h1>Sign In!...</h1>
       <form onSubmit={handleSubmit}>
         <input
+          className='input'
           type="text"
           placeholder="Username"
           value={username}
@@ -31,13 +33,14 @@ const SignIn = () => {
           required
         />
         <input
+          className='input'
           type="password"
           placeholder="Password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           required
         />
-        <button type="submit">Sign In</button>
+        <button className='button' type="submit">Sign In</button>
       </form>
       <p>{message}</p>
     </div>

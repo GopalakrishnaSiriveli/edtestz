@@ -2,9 +2,10 @@ import React from 'react';
 
 const Home = () => {
   return (
-    <div>
-      <h2>Welcome to the Appointment Booking App</h2>
-      <p>Sign up or sign in to book your appointments and view your appointment history.</p>
+    <div className='signin'>
+      <h1>Welcome to Your Personal Appointment Scheduler!</h1>
+      <p>Discover seamless booking and manage your appointments effortlessly.</p>
+      <img src="https://res.cloudinary.com/dz7osr4ia/image/upload/v1719483130/OIP_3_ua37lw.jpg"/>
     </div>
   );
 };
